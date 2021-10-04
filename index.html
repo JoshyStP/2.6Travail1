@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <a href="stuff.html">Javastuff</a>
+
+    <script>
+      //Stockage de nom
+      var prenom = prompt("Quelle est ton prenom?");
+      var millieu = prompt("Quelle est ton nom du millieu?");
+      var dernier = prompt("Quelle est ton dernier nom?");
+      
+      //initial
+      var initiale = prenom.charAt(0);
+      initiale=initiale+millieu.charAt(0);
+      initiale=initiale+dernier.charAt(0);
+      alert("Initiale: "+initiale);
+      
+      //nom au complet
+      alert("Nom au complet: "+prenom+" "+millieu+" "+dernier);
+      
+      //Nom dutilisateur
+      var utili = prenom.charAt(0);
+      utili=utili+millieu.charAt(0);
+      utili=utili+dernier;
+      var utilimin = utili.toLocaleLowerCase();
+      alert("Nom d'utilisateur: "+utilimin);
+    </script>
+
+    <script src="script.js">run</script>
+  </body>
+</html>
