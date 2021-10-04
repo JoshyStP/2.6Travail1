@@ -1,0 +1,29 @@
+<html>
+  <body>
+
+
+    <script>
+      var nE;
+      var nS=0;
+        var ndn = 0;
+        var nmm = []
+        
+        var choix = "O"
+        while(choix=="O"){
+          nE = parseInt(prompt("Entre une nombre."));
+          nmm.push(nE);
+          nS = nS+nE
+          ndn = ndn+1
+          choix = prompt("Voulez-vous ajouter un autre nombre (O/N)")
+        }
+        
+        var nM = nS/ndn
+        console.log("Somme: "+nS)
+        console.log("Moyen: "+nM)
+        var min = Math.min.apply(Math, nmm)   
+        var max = Math.max.apply(Math, nmm)
+        console.log("Min: "+min)
+        console.log("Max :"+max)
+      </script>
+    </body>
+  </html>
